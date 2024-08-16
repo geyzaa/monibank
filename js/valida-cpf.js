@@ -2,9 +2,11 @@ export default function ehUmCPF(campo) {
     const cpf = campo.value.replace(/\.|-/g,"" );
    if (validaNumerosRepetidos(cpf) || validaPrimeiroDigito (cpf) || validaSegundoDigito(cpf)){
         campo.setCustomValidity('Esse cpf não é válido');
-        //a mensagem de erro customizada só vai aparecer se o setCustomValidity não for false,
-        // precisava ser feito manualmente, então criamos essa frase ('Esse cpf não é válido')
-        //assim virou outra coisa diferente de false, permitindo que a mensagem apareça
+        /*Com o método setCustomValidity é possível alterar o valor de customError. 
+        Com isso, a mensagem do erro específica de acordo com o valor da propriedade 
+        do erro dentro do validityState irá aparecer pois o valor de customError não será mais false.
+        precisava ser feito manualmente, então criamos essa frase ('Esse cpf não é válido')
+        assim virou outra coisa diferente de false, permitindo que a mensagem apareça*/ 
    } 
     
 }
