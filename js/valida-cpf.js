@@ -1,10 +1,11 @@
 export default function ehUmCPF(campo) {
     const cpf = campo.value.replace(/\.|-/g,"" );
    if (validaNumerosRepetidos(cpf) || validaPrimeiroDigito (cpf) || validaSegundoDigito(cpf)){
-        console.log("Esse cpf não existe!")
-   } else {
-        console.log("Existe!");
-   }
+        campo.setCustomValidity('Esse cpf não é válido');
+        //a mensagem de erro customizada só vai aparecer se o setCustomValidity não for false,
+        // precisava ser feito manualmente, então criamos essa frase ('Esse cpf não é válido')
+        //assim virou outra coisa diferente de false, permitindo que a mensagem apareça
+   } 
     
 }
 
