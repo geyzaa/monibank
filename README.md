@@ -1,5 +1,5 @@
 <p align="center">Projeto elaborado durante o curso de JavaScript: validando formulários.</p>
-Na primeira etapa desse projeto, foram emplementadas validações nos campos do formulário de cadastro do Monibank.<br>
+Na primeira etapa desse projeto, foram implementadas validações nos campos do formulário de cadastro do Monibank.<br>
 <br>
 Na segunda etapa, onde há o reconhecimento facial, foi acionada a câmera para fotografar utilizando o JavaScript e salvar a imagem na tela.
 
